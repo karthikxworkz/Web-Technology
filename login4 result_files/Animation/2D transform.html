@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D transform</title>
+    <style>
+         div{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(29, 27, 31);
+            /* transition: width 3s,height 4s,transform 10s; */
+            position: relative;
+           animation-name: animationName;
+           animation-direction: 4s;
+           animation: iteration count infinite;
+           animation-duration: 4s;
+           animation-direction: alternate;
+         }
+
+         @keyframes animationName{
+            0%{background-color: black;  left: 0px; top: 0px;}
+            25%{background-color: yellow; left: 200px; top: 0px;}
+            50%{background-color: aqua; left: 200px; top: 200px;}
+            75%{background-color: blueviolet; left: 200px; top: 0px;}
+            100%{background-color: tomato; left: 0px; top: 0px;}
+         }
+      
+       </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
